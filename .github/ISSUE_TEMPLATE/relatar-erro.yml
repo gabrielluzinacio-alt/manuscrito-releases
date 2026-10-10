@@ -1,0 +1,60 @@
+name: Relatar erro
+description: Informe um problema encontrado em um aplicativo Manuscrito.
+title: "[Bug] "
+labels: []
+body:
+  - type: dropdown
+    id: aplicativo
+    attributes:
+      label: Aplicativo
+      options:
+        - Manuscrito Literário
+        - Outro aplicativo Manuscrito
+    validations:
+      required: true
+  - type: input
+    id: versao
+    attributes:
+      label: Versão
+      placeholder: Ex. 1.1.0-beta.1
+    validations:
+      required: true
+  - type: input
+    id: sistema
+    attributes:
+      label: Sistema operacional
+      placeholder: Ex. Windows 11 x64
+    validations:
+      required: true
+  - type: textarea
+    id: etapas
+    attributes:
+      label: Etapas para reproduzir
+      description: Utilize somente dados fictícios.
+      placeholder: "1. Abrir o aplicativo\n2. Criar um projeto fictício\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: observado
+    attributes:
+      label: Comportamento observado
+    validations:
+      required: true
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Mensagens e evidências
+      description: Remova dados pessoais, caminhos sensíveis e textos de obras antes de enviar capturas ou logs.
+  - type: checkboxes
+    id: privacidade
+    attributes:
+      label: Segurança e privacidade
+      options:
+        - label: Confirmei que o relato e seus anexos não contêm projetos reais nem informações pessoais.
+          required: true
