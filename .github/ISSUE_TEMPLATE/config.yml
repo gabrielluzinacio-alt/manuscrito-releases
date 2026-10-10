@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Baixar versões do Manuscrito
+    url: https://github.com/gabrielluzinacio-alt/manuscrito-releases/releases
+    about: Consulte os instaladores e notas publicados.
